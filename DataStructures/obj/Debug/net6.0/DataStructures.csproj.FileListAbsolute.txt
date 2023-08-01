@@ -1,0 +1,12 @@
+C:\Users\phili\source\repos\DataStructures_and_Algorithms_Csharp\DataStructures\bin\Debug\net6.0\DataStructures.deps.json
+C:\Users\phili\source\repos\DataStructures_and_Algorithms_Csharp\DataStructures\bin\Debug\net6.0\DataStructures.dll
+C:\Users\phili\source\repos\DataStructures_and_Algorithms_Csharp\DataStructures\bin\Debug\net6.0\DataStructures.pdb
+C:\Users\phili\source\repos\DataStructures_and_Algorithms_Csharp\DataStructures\obj\Debug\net6.0\DataStructures.csproj.AssemblyReference.cache
+C:\Users\phili\source\repos\DataStructures_and_Algorithms_Csharp\DataStructures\obj\Debug\net6.0\DataStructures.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\phili\source\repos\DataStructures_and_Algorithms_Csharp\DataStructures\obj\Debug\net6.0\DataStructures.AssemblyInfoInputs.cache
+C:\Users\phili\source\repos\DataStructures_and_Algorithms_Csharp\DataStructures\obj\Debug\net6.0\DataStructures.AssemblyInfo.cs
+C:\Users\phili\source\repos\DataStructures_and_Algorithms_Csharp\DataStructures\obj\Debug\net6.0\DataStructures.csproj.CoreCompileInputs.cache
+C:\Users\phili\source\repos\DataStructures_and_Algorithms_Csharp\DataStructures\obj\Debug\net6.0\DataStructures.dll
+C:\Users\phili\source\repos\DataStructures_and_Algorithms_Csharp\DataStructures\obj\Debug\net6.0\refint\DataStructures.dll
+C:\Users\phili\source\repos\DataStructures_and_Algorithms_Csharp\DataStructures\obj\Debug\net6.0\DataStructures.pdb
+C:\Users\phili\source\repos\DataStructures_and_Algorithms_Csharp\DataStructures\obj\Debug\net6.0\ref\DataStructures.dll
