@@ -8,6 +8,10 @@ namespace DataStructures.Algorithms
 {
     public class Sort
     {
+        /// <summary>
+        /// Sorts an array of integers using the Bubble Sort algorithm in ascending order.
+        /// </summary>
+        /// <param name="list">The array of integers to be sorted.</param>
         public void BubbleSort(params int[] list)
         {
             for(int i = 0; i < list.Length; i++)
@@ -23,6 +27,11 @@ namespace DataStructures.Algorithms
                 }
             }
         }
+
+        /// <summary>
+        /// Sorts an array of doubles using the Bubble Sort algorithm in ascending order.
+        /// </summary>
+        /// <param name="list">The array of doubles to be sorted.</param>
         public void BubbleSort(params double[] list)
         {
             for (int i = 0; i < list.Length; i++)
@@ -38,6 +47,11 @@ namespace DataStructures.Algorithms
                 }
             }
         }
+
+        /// <summary>
+        /// Sorts an array of strings using the Bubble Sort algorithm in lexicographical order (alphabetically).
+        /// </summary>
+        /// <param name="list">The array of strings to be sorted.</param>
         public void BubbleSort(params string[] list)
         {
             for (int i = 0; i < list.Length; i++)
@@ -53,10 +67,49 @@ namespace DataStructures.Algorithms
                 }
             }
         }
-        public void QuickSort(params int[] array)
+
+        /// <summary>
+        /// Sorts an array of integers using the Quick Sort algorithm in ascending order.
+        /// </summary>
+        /// <param name="array">The array of integers to be sorted.</param>
+        /// <returns>A new array containing the sorted integers.</returns>
+        public int[] QuickSort(params int[] array)
         {
+            if (array.Length <= 1)
+                return array;
+
+            int pivot = array[array.Length - 1];
+            List<int> left = new List<int>();
+            List<int> right = new List<int>();
+
+            for (int j = 0; j < array.Length - 1; j++)
+            {
+                if (array[j] > pivot)
+                {
+                    right.Add(array[j]);
+                }
+                else
+                {
+                    left.Add(array[j]);
+                }
+            }
+
+            int[] lesser = QuickSort(left.ToArray());
+            int[] greater = QuickSort(right.ToArray());
+
+            List<int> result = new List<int>(lesser);
+            result.Add(pivot);
+            result.AddRange(greater);
+
+            return result.ToArray();
 
         }
+
+        /// <summary>
+        /// Sorts an array of integers using the Merge Sort algorithm in ascending order.
+        /// </summary>
+        /// <param name="list">The array of integers to be sorted.</param>
+        /// <returns>A new array containing the sorted integers.</returns>
         public int[] MergeSort(params int[] list)
         {
             if(list.Length == 1)
@@ -79,6 +132,13 @@ namespace DataStructures.Algorithms
             return Merge(left, right);
             
         }
+
+        /// <summary>
+        /// Merges two sorted arrays into a single sorted array.
+        /// </summary>
+        /// <param name="left">The first sorted array.</param>
+        /// <param name="right">The second sorted array.</param>
+        /// <returns>A new array containing the merged and sorted elements from both input arrays.</returns>
         public int[] Merge(int[] left, int[] right)
         {
             List<int> merge = new List<int>();
@@ -112,6 +172,5 @@ namespace DataStructures.Algorithms
 
             return merge.ToArray();
         }
-
     }
 }
